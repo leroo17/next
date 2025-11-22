@@ -1,3 +1,5 @@
+import Filter from "./Filter";
+
 export default function Header() {
     return (
         <>
@@ -9,18 +11,7 @@ export default function Header() {
                     <div className="navbar-wrapper d-flex justify-content-between align-items-center">
                     <a className="logo" href="/"></a>
                     <div className="d-flex control-wrapper">
-                    <div className="catalog-button">
-                        <button>
-                        <span className="catalog-button_burger"></span><span className="catalog-button_text">Каталог</span>
-                        </button>
-                        <div className="catalog">
-                        <ul className="catalog-list">
-                        <li>Игровая приставка</li>
-                        <li>Периферия для ПК</li>
-                        <li>Игры и софт</li>
-                        </ul>
-                        </div>
-                    </div>
+                    <Filter />
                     <div className="search">
                         <div className="search-wrapper">
                         <input className="search-wrapper_input" type="text" />
