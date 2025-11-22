@@ -1,6 +1,6 @@
 import { getData } from "./actions";
 import { Product } from "./models/product.model";
-import { Query } from "./models/quert.model";
+import { Query } from "./models/query.model";
 
 export default async function Home({searchParams}: {searchParams: Query}) {
   const query = await searchParams;

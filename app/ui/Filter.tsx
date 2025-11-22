@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { usePathname, useSearchParams } from "next/navigation"
-import { useRouter } from "next/router"
+import { useRouter } from "next/navigation"
 
 export default function Filter() {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +17,7 @@ export default function Filter() {
             params.delete('category')
         }
 
-        router.replace(`${pathName}?${params.toString}`)
+        router.replace(`${pathName}?${params.toString()}`)
     }
     return (
         <>

@@ -1,4 +1,6 @@
+import Link from "next/dist/client/link";
 import Filter from "./Filter";
+import Search from "./Search";
 
 export default function Header() {
     return (
@@ -9,17 +11,10 @@ export default function Header() {
                 <div className="row">
                     <div className="col">
                     <div className="navbar-wrapper d-flex justify-content-between align-items-center">
-                    <a className="logo" href="/"></a>
+                    <Link className="logo" href="/"></Link>
                     <div className="d-flex control-wrapper">
                     <Filter />
-                    <div className="search">
-                        <div className="search-wrapper">
-                        <input className="search-wrapper_input" type="text" />
-                        </div>
-                        <div className="search-btn">
-                        <button></button>
-                        </div>
-                    </div>
+                    <Search />
                     </div>
                     <a href="#" id="cart">
                     <span className="counter">0</span>
